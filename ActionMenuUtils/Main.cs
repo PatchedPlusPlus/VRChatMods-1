@@ -3,7 +3,6 @@ using System.IO;
 using System.Reflection;
 using ActionMenuApi.Api;
 using MelonLoader;
-using ModJsonGenerator;
 using UIExpansionKit.API;
 using UnhollowerRuntimeLib;
 using UnityEngine;
@@ -11,24 +10,11 @@ using VRC;
 using Main = ActionMenuUtils.Main;
 
 [assembly: MelonGame("VRChat", "VRChat")]
-[assembly: MelonInfo(typeof(Main), "ActionMenuUtils", "2.0.2", "gompo", "https://github.com/gompoc/VRChatMods/releases/")]
-[assembly: VerifyLoaderVersion(0, 4, 3, true)]
-[assembly: ModJsonInfo(
-        140, 
-        "Lets you respawn using the action menu\n" +
-        "Lets you go home for when respawning wont save you such as in broken worlds with no floors\n" +
-        "Additionally lets you reset avatar or rejoin instance", 
-        new []{"action menu", "respawn", "go home", "reset avatar"}, 
-        new []{"[ActionMenuApi](https://api.vrcmg.com/v0/mods/201/ActionMenuApi.dll)", "[UIExpansionKit](https://api.vrcmg.com/v0/mods/55/UIExpansionKit.dll)"}, 
-        "- Mod now depends on ActionMenuApi & UIExpansionKit, this just makes maintaining it easier for me when/if something breaks\n"+
-        "- New setting added that you can enable so you can now select which avatar you want to reset into. You can select avatar by going to the AvatarMenu and clicking the UIExpansionKit button on the left",
-        "#2ad9f7"
-        )
-]
+[assembly: MelonInfo(typeof(Main), "ActionMenuUtils", "2.0.2", "gompo, PatchedPlus+", "https://github.com/gompoc/VRChatMods/releases/")]
 
 namespace ActionMenuUtils
 {
-    public partial class Main : MelonMod
+    public class Main : MelonMod
     {
         private static AssetBundle iconsAssetBundle;
         private static Texture2D respawnIcon;
@@ -36,12 +22,12 @@ namespace ActionMenuUtils
         private static Texture2D goHomeIcon;
         private static Texture2D resetAvatarIcon;
         private static Texture2D rejoinInstanceIcon;
-        
+
         public override void OnApplicationStart()
         {
             try
             {
-                if (string.IsNullOrEmpty(ID)) return;
+                //if (string.IsNullOrEmpty(ID)) return;
                 //Adapted from knah's JoinNotifier mod found here: https://github.com/knah/VRCMods/blob/master/JoinNotifier/JoinNotifierMod.cs 
                 using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("ActionMenuUtils.icons"))
                 {
@@ -145,6 +131,6 @@ namespace ActionMenuUtils
         public override void OnPreferencesLoaded() => ModSettings.Apply();
         public override void OnPreferencesSaved() => ModSettings.Apply();
         
-        private static string ID = "gompo";
+        //private static string ID = "gompo";
     }
 }

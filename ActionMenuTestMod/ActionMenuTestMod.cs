@@ -7,14 +7,13 @@ using MelonLoader;
 using UnhollowerRuntimeLib;
 using UnityEngine;
 
-[assembly: MelonInfo(typeof(ActionMenuTestMod.ActionMenuTestMod), "ActionMenuTestMod", "1.0.0", "gompo")]
+[assembly: MelonInfo(typeof(ActionMenuTestMod.ActionMenuTestMod), "ActionMenuTestMod, PatchedPlus+", "1.0.0", "gompo")]
 [assembly: MelonGame("VRChat", "VRChat")]
-[assembly: VerifyLoaderVersion(0, 4, 3, true)]
 
 namespace ActionMenuTestMod
 {
     // Icons from https://uxwing.com/
-    public partial class ActionMenuTestMod : MelonMod
+    public class ActionMenuTestMod : MelonMod
     {
 
         private float testFloatValue = 50;
