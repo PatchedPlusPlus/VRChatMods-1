@@ -1,18 +1,19 @@
 ﻿using System;
 using System.Collections;
+using ActionMenuApi.Helpers;
 using ActionMenuApi.Managers;
 using MelonLoader;
 
 #pragma warning disable 1591
 
-[assembly: MelonInfo(typeof(ActionMenuApi.ActionMenuApi), "ActionMenuApi", "0.3.3", "gompo, PatchedPlus+", "https://github.com/gompoc/ActionMenuApi/releases")]
+[assembly: MelonInfo(typeof(ActionMenuApi.ActionMenuApi), "ActionMenuApi", "0.3.5", "gompo, PatchedPlus+", "https://github.com/gompoc/ActionMenuApi/releases")]
 [assembly: MelonGame("VRChat", "VRChat")]
 
 namespace ActionMenuApi
 {
     public class ActionMenuApi : MelonMod
     {
-
+        
         public override void OnApplicationStart()
         {
             ResourcesManager.LoadTextures();

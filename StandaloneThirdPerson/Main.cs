@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using HarmonyLib;
 using MelonLoader;
 using UnityEngine;
@@ -7,7 +6,7 @@ using UnityEngine.XR;
 using Main = StandaloneThirdPerson.Main;
 
 [assembly: MelonGame("VRChat", "VRChat")]
-[assembly: MelonInfo(typeof(Main), "StandaloneThirdPerson", "1.3.1", "gompo & ljoonal, PatchedPlus+", "https://github.com/gompoc/VRChatMods/releases/")]
+[assembly: MelonInfo(typeof(Main), "StandaloneThirdPerson", "1.3.3", "gompo & ljoonal, PatchedPlus+", "https://github.com/gompoc/VRChatMods/releases/")]
 
 namespace StandaloneThirdPerson
 {
@@ -30,14 +29,15 @@ namespace StandaloneThirdPerson
                 yield return new WaitForEndOfFrame();
             if (XRDevice.isPresent)
                 yield break;
+            ModSettings.RegisterSettings();
+            ModSettings.LoadSettings();
+            while (GameObject.Find("UserInterface/Canvas_QuickMenu(Clone)/Container/Window/MicButton") == null)
+                yield return null;
             OnUIInit();
         }
 
         private static void OnUIInit()
         {
-            ModSettings.RegisterSettings();
-            ModSettings.LoadSettings();
-            
             vrcCamera = GameObject.Find("Camera (eye)")?.GetComponent<Camera>();
 
             if (vrcCamera == null)
@@ -53,7 +53,7 @@ namespace StandaloneThirdPerson
             thirdPersonCamera.enabled = false;
             thirdPersonCamera.transform.parent = originalCameraTransform.parent;
 
-            GameObject.Find("UserInterface/QuickMenu/MicControls").AddComponent<QMEnableDisableListener>();
+            GameObject.Find("UserInterface/Canvas_QuickMenu(Clone)/Container/Window/MicButton").AddComponent<QMEnableDisableListener>();
 
             initialised = true;
         }

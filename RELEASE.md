@@ -1,2 +1,6 @@
-### ActionMenuUtils v2.0.2
-- Change text on uix button to fit it better
+### ActionMenuUtils v2.0.3
+- Fixed compatibility for ui update
+### ActionMenuApi v0.3.5
+- Fixed compatibility for ui update
+### StandaloneThirdPerson v1.3.3
+- Fixed compatibility for ui update

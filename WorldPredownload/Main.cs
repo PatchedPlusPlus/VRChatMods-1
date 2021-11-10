@@ -2,7 +2,7 @@
 using UIExpansionKit.API;
 using WorldPredownload.UI;
 
-[assembly: MelonInfo(typeof(WorldPredownload.WorldPredownload), "WorldPredownload", "1.6.2", "gompo, PatchedPlus+", "https://github.com/gompoc/VRChatMods/releases/")]
+[assembly: MelonInfo(typeof(WorldPredownload.WorldPredownload), "WorldPredownload", "1.6.3", "gompo, PatchedPlus+", "https://github.com/gompoc/VRChatMods/releases/")]
 [assembly: MelonGame("VRChat", "VRChat")]
 
 namespace WorldPredownload
@@ -20,17 +20,18 @@ namespace WorldPredownload
             ModSettings.LoadSettings();
             SocialMenuSetup.Patch();
             WorldInfoSetup.Patch();
-            NotificationMoreActions.Patch();
+            //NotificationMoreActions.Patch();
             ExpansionKitApi.OnUiManagerInit += UiManagerInit;
         }
-
+        
+        
         private void UiManagerInit()
         {
             //if (string.IsNullOrEmpty(ID)) return;
             InviteButton.Setup();
             FriendButton.Setup();
             WorldButton.Setup();
-            WorldDownloadStatus.Setup();
+            //WorldDownloadStatus.Setup();
             HudIcon.Setup();
         }
 
