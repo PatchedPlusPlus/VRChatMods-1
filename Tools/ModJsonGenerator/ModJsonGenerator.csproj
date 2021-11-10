@@ -17,4 +17,58 @@
         <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Reference Update="System.Xml.Linq">
+        <CopyLocal>False</CopyLocal>
+      </Reference>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Update="System">
+        <CopyLocal>False</CopyLocal>
+      </Reference>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Update="System.Core">
+        <CopyLocal>False</CopyLocal>
+      </Reference>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Update="System.Data">
+        <CopyLocal>False</CopyLocal>
+      </Reference>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Update="System.Drawing">
+        <CopyLocal>False</CopyLocal>
+      </Reference>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Update="System.IO.Compression.FileSystem">
+        <CopyLocal>False</CopyLocal>
+      </Reference>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Update="System.Numerics">
+        <CopyLocal>False</CopyLocal>
+      </Reference>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Update="System.Runtime.Serialization">
+        <CopyLocal>False</CopyLocal>
+      </Reference>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Update="System.Xml">
+        <CopyLocal>False</CopyLocal>
+      </Reference>
+    </ItemGroup>
+
 </Project>

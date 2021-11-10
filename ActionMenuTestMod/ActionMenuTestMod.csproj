@@ -20,4 +20,163 @@
     <ItemGroup>
         <EmbeddedResource Include="customicons" />
     </ItemGroup>
+
+    <ItemGroup>
+      <Reference Update="Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <CopyLocal>False</CopyLocal>
+      </Reference>
+      <Reference Update="Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <CopyLocal>False</CopyLocal>
+      </Reference>
+      <Reference Update="DOTween, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <CopyLocal>False</CopyLocal>
+      </Reference>
+      <Reference Update="Facepunch.Steamworks.Win64, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <CopyLocal>False</CopyLocal>
+      </Reference>
+      <Reference Update="Il2Cppmscorlib, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <CopyLocal>False</CopyLocal>
+      </Reference>
+      <Reference Update="Il2CppSystem, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <CopyLocal>False</CopyLocal>
+      </Reference>
+      <Reference Update="Il2CppSystem.Core, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <CopyLocal>False</CopyLocal>
+      </Reference>
+      <Reference Update="MelonLoader, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <CopyLocal>False</CopyLocal>
+      </Reference>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Update="System">
+        <CopyLocal>False</CopyLocal>
+      </Reference>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Update="System.Core">
+        <CopyLocal>False</CopyLocal>
+      </Reference>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Update="System.Data">
+        <CopyLocal>False</CopyLocal>
+      </Reference>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Update="System.Drawing">
+        <CopyLocal>False</CopyLocal>
+      </Reference>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Update="System.IO.Compression.FileSystem">
+        <CopyLocal>False</CopyLocal>
+      </Reference>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Update="System.Numerics">
+        <CopyLocal>False</CopyLocal>
+      </Reference>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Update="System.Runtime.Serialization">
+        <CopyLocal>False</CopyLocal>
+      </Reference>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Update="System.Xml">
+        <CopyLocal>False</CopyLocal>
+      </Reference>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Update="System.Xml.Linq">
+        <CopyLocal>False</CopyLocal>
+      </Reference>
+      <Reference Update="Transmtn, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <CopyLocal>False</CopyLocal>
+      </Reference>
+      <Reference Update="UIExpansionKit, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <CopyLocal>False</CopyLocal>
+      </Reference>
+      <Reference Update="UnhollowerBaseLib, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <CopyLocal>False</CopyLocal>
+      </Reference>
+      <Reference Update="UniTask, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <CopyLocal>False</CopyLocal>
+      </Reference>
+      <Reference Update="Unity.TextMeshPro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <CopyLocal>False</CopyLocal>
+      </Reference>
+      <Reference Update="UnityEngine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <CopyLocal>False</CopyLocal>
+      </Reference>
+      <Reference Update="UnityEngine.AnimationModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <CopyLocal>False</CopyLocal>
+      </Reference>
+      <Reference Update="UnityEngine.AssetBundleModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <CopyLocal>False</CopyLocal>
+      </Reference>
+      <Reference Update="UnityEngine.AudioModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <CopyLocal>False</CopyLocal>
+      </Reference>
+      <Reference Update="UnityEngine.ClothModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <CopyLocal>False</CopyLocal>
+      </Reference>
+      <Reference Update="UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <CopyLocal>False</CopyLocal>
+      </Reference>
+      <Reference Update="UnityEngine.InputLegacyModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <CopyLocal>False</CopyLocal>
+      </Reference>
+      <Reference Update="UnityEngine.ParticleSystemModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <CopyLocal>False</CopyLocal>
+      </Reference>
+      <Reference Update="UnityEngine.PhysicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <CopyLocal>False</CopyLocal>
+      </Reference>
+      <Reference Update="UnityEngine.TextRenderingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <CopyLocal>False</CopyLocal>
+      </Reference>
+      <Reference Update="UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <CopyLocal>False</CopyLocal>
+      </Reference>
+      <Reference Update="UnityEngine.UIModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <CopyLocal>False</CopyLocal>
+      </Reference>
+      <Reference Update="UnityEngine.UnityWebRequestModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <CopyLocal>False</CopyLocal>
+      </Reference>
+      <Reference Update="UnityEngine.UnityWebRequestWWWModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <CopyLocal>False</CopyLocal>
+      </Reference>
+      <Reference Update="UnityEngine.VRModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <CopyLocal>False</CopyLocal>
+      </Reference>
+      <Reference Update="UnityEngine.XRModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <CopyLocal>False</CopyLocal>
+      </Reference>
+      <Reference Update="VRCCore-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <CopyLocal>False</CopyLocal>
+      </Reference>
+      <Reference Update="VRCCore-Standalone, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <CopyLocal>False</CopyLocal>
+      </Reference>
+      <Reference Update="VRCSDK2, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <CopyLocal>False</CopyLocal>
+      </Reference>
+      <Reference Update="VRCSDK3A, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <CopyLocal>False</CopyLocal>
+      </Reference>
+      <Reference Update="VRCSDKBase, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <CopyLocal>False</CopyLocal>
+      </Reference>
+    </ItemGroup>
 </Project>
