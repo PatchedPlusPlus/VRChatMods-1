@@ -1,3 +1,15 @@
+This repository contains a modified version of [gompocp´s mods](https://github.com/PatchedPlusPlus/VRChatMods) for VRChat. 
+
++ Join the [VRChat Modding Group discord](https://discord.gg/rCqKSvR) for more mods!
++ Join the [VRCMG Unchained discord](https://discord.gg/boycottknah) for support and more mods!
++ Join the [VRC Modding Group Plus+](https://discord.gg/2k6pXM4uYw) for support
+
+Using a modified MelonLoader without some security features brings a risk with it, you should read Knah's blogpost: [Malicious Mods and you](https://github.com/knah/VRCMods/edit/master/Malicious-Mods.md)
+
+Don't blame me or other when you data or tokens get stolen. Always think about what mods you are using and why they are obfuscated and so on. 
+
+Don't hatespeech the original Author please, without them this would not be possible!
+
 # Disclaimer
 
 Modding the VRChat client is against VRChat's Terms of Service. Therefore use these mods at your own risk. I am not responsible for if you get banned or any other punishment by using these mods!
