@@ -6,12 +6,11 @@ using MelonLoader;
 using UIExpansionKit.API;
 using UnhollowerRuntimeLib;
 using UnityEngine;
-using UnityEngine.Video;
 using VRC;
 using Main = ActionMenuUtils.Main;
 
 [assembly: MelonGame("VRChat", "VRChat")]
-[assembly: MelonInfo(typeof(Main), "ActionMenuUtils", "2.0.3", "gompo, PatchedPlus+", "https://github.com/gompoc/VRChatMods/releases/")]
+[assembly: MelonInfo(typeof(Main), "ActionMenuUtils", "2.0.4", "gompo, PatchedPlus+", "https://github.com/gompoc/VRChatMods/releases/")]
 
 namespace ActionMenuUtils
 {
