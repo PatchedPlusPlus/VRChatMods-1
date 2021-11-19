@@ -1,5 +1,41 @@
 {
   "Version": 1,
-  "ProjectMap": {},
-  "NextColorIndex": 0
+  "ProjectMap": {
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Sonstige Dateien",
+      "ColorIndex": -1
+    },
+    "4f1afca6-f4ac-49b9-9fee-3c83c4664835": {
+      "ProjectGuid": "4f1afca6-f4ac-49b9-9fee-3c83c4664835",
+      "DisplayName": "ActionMenuApi",
+      "ColorIndex": 0
+    },
+    "7477f0c4-44ac-4049-a81e-e6a66f28b73c": {
+      "ProjectGuid": "7477f0c4-44ac-4049-a81e-e6a66f28b73c",
+      "DisplayName": "ActionMenuUtils",
+      "ColorIndex": 1
+    },
+    "a5f07d37-cab2-43c7-98af-f8184cc71da1": {
+      "ProjectGuid": "a5f07d37-cab2-43c7-98af-f8184cc71da1",
+      "DisplayName": "StandaloneThirdPerson",
+      "ColorIndex": 2
+    },
+    "24f66d86-8b5c-4e4e-bcc2-06662e66c0ec": {
+      "ProjectGuid": "24f66d86-8b5c-4e4e-bcc2-06662e66c0ec",
+      "DisplayName": "WorldPredownload",
+      "ColorIndex": 3
+    },
+    "a91fb6a1-17a6-4ea1-a9c3-9c229c10a709": {
+      "ProjectGuid": "a91fb6a1-17a6-4ea1-a9c3-9c229c10a709",
+      "DisplayName": "Solution Items",
+      "ColorIndex": 4
+    },
+    "3e808c0a-0bf6-4dc6-808c-3bf377cc1e8e": {
+      "ProjectGuid": "3e808c0a-0bf6-4dc6-808c-3bf377cc1e8e",
+      "DisplayName": "ActionMenuTestMod",
+      "ColorIndex": 5
+    }
+  },
+  "NextColorIndex": 6
 }
