@@ -82,13 +82,12 @@ namespace ActionMenuApi.Helpers
 
         public static void AddPedalsInList(List<PedalStruct> list, ActionMenu instance)
         {
-            //if (!LoaderIntegrityCheck.passed && new System.Random().Next(3) == 1) return;
             foreach (var pedalStruct in list)
             {
                 if (!pedalStruct.shouldAdd) continue;
                 var pedalOption = instance.AddOption();
                 pedalOption.SetText(pedalStruct.text);
-                if (!pedalStruct.locked) pedalOption.SetPedalAction(pedalStruct.triggerEvent);
+                if (!pedalStruct.locked) pedalOption.SetPedalAction(delegate {pedalStruct.triggerEvent.Invoke(instance);  });
                 else pedalOption.Lock();
                 //Additional setup for pedals
                 switch (pedalStruct.Type)
@@ -177,6 +176,8 @@ namespace ActionMenuApi.Helpers
             if (ActionMenuDriver.prop_ActionMenuDriver_0.GetLeftOpener().isOpen() &&
                 !ActionMenuDriver.prop_ActionMenuDriver_0.GetRightOpener().isOpen())
                 return ActionMenuDriver.prop_ActionMenuDriver_0.GetLeftOpener();
+            
+            
 
             return null;
             /*
@@ -254,17 +255,11 @@ namespace ActionMenuApi.Helpers
             }
 
             var leftOpener = ActionMenuDriver.prop_ActionMenuDriver_0.GetLeftOpener();
-            if (leftOpener.isOpen())
-            {
-                leftOpener.GetActionMenu().Reset();
-                //leftOpener.GetActionMenu().ResetMenu();
-            }
+            leftOpener.GetActionMenu().Reset();
+
             var rightOpener = ActionMenuDriver.prop_ActionMenuDriver_0.GetRightOpener();
-            if (rightOpener.isOpen())
-            {
-                rightOpener.GetActionMenu().Reset();
-                //rightOpener.GetActionMenu().ResetMenu();
-            }
+            rightOpener.GetActionMenu().Reset();
+            
         }
         
         public static (double x1, double y1, double x2, double y2) GetIntersection(float x, float y, float r)
