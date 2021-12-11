@@ -4,3 +4,4 @@ obj/
 ModJsons/
 packages/
 *.user
+.vs/*
