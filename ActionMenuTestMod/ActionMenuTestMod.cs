@@ -1,6 +1,5 @@
 ﻿using System.IO;
 using System.Reflection;
-using ActionMenuApi;
 using ActionMenuApi.Api;
 using ActionMenuApi.Pedals;
 using MelonLoader;
@@ -96,10 +95,10 @@ namespace ActionMenuTestMod
                 subMenuIcon,
                 false
             );
-            
+
             for (int i = 0; i < 2; i++) //Set to a high number if you want to test the page functionality 
             {
-                AMUtils.AddToModsFolder($"Example Mod {i+2}", () => {}, subMenuIcon); 
+                AMUtils.AddToModsFolder($"Example Mod {i + 2}", () => { }, subMenuIcon);
             }
         }
 
