@@ -10,7 +10,7 @@ using VRC;
 using Main = ActionMenuUtils.Main;
 
 [assembly: MelonGame("VRChat", "VRChat")]
-[assembly: MelonInfo(typeof(Main), "ActionMenuUtils", "2.0.4", "gompo, PatchedPlus+", "https://github.com/gompoc/VRChatMods/releases/")]
+[assembly: MelonInfo(typeof(Main), "ActionMenuUtils", "2.0.4", "gompo, P a t c h e d   P l u s +", "https://github.com/gompoc/VRChatMods/releases/")]
 
 namespace ActionMenuUtils
 {
@@ -49,7 +49,8 @@ namespace ActionMenuUtils
                 rejoinInstanceIcon = iconsAssetBundle.LoadAsset_Internal("Assets/Resources/Pin.png", Il2CppType.Of<Texture2D>()).Cast<Texture2D>();
                 rejoinInstanceIcon.hideFlags |= HideFlags.DontUnloadUnusedAsset;
             }
-            catch (Exception e) {
+            catch (Exception e)
+            {
                 MelonLogger.Warning("Consider checking for newer version as mod possibly no longer working, Exception occured OnAppStart(): " + e.Message);
             }
             ModSettings.RegisterSettings();
@@ -57,10 +58,10 @@ namespace ActionMenuUtils
             SetupAMAPIButtons();
             SetupUIXButtons();
         }
-        
+
         private static void SetupUIXButtons()
         {
-            ExpansionKitApi.GetExpandedMenu(ExpandedMenu.AvatarMenu).AddSimpleButton("Set AMU Reset Avatar", 
+            ExpansionKitApi.GetExpandedMenu(ExpandedMenu.AvatarMenu).AddSimpleButton("Set AMU Reset Avatar",
                 () =>
                 {
                     var avatarId = GameObject.Find("UserInterface/MenuContent/Screens/Avatar/AvatarPreviewBase/MainRoot/MainModel").GetComponent<SimpleAvatarPedestal>().field_Internal_ApiAvatar_0.id;
@@ -78,11 +79,11 @@ namespace ActionMenuUtils
                     UIXAvatarMenuButton = g;
                     UIXAvatarMenuButton.active = ModSettings.enableCustomAvatarReset;
                 });
-            
+
         }
 
         public static GameObject UIXAvatarMenuButton;
-        
+
         private static void SetupAMAPIButtons()
         {
             VRCActionMenuPage.AddSubMenu(ActionMenuPage.Options, "SOS",
@@ -90,7 +91,7 @@ namespace ActionMenuUtils
                 {
                     //Respawn
                     if (ModSettings.confirmRespawn)
-                        CustomSubMenu.AddSubMenu("Respawn", 
+                        CustomSubMenu.AddSubMenu("Respawn",
                             () => CustomSubMenu.AddButton("Confirm Respawn", Utils.Respawn, respawnIcon),
                             respawnIcon
                         );
@@ -100,29 +101,29 @@ namespace ActionMenuUtils
                     //Reset Avatar
                     if (ModSettings.confirmAvatarReset)
                         CustomSubMenu.AddSubMenu("Reset Avatar",
-                            () => CustomSubMenu.AddButton("Confirm Reset Avatar", Utils.ResetAvatar, resetAvatarIcon), 
+                            () => CustomSubMenu.AddButton("Confirm Reset Avatar", Utils.ResetAvatar, resetAvatarIcon),
                             resetAvatarIcon
                         );
                     else
                         CustomSubMenu.AddButton("Reset Avatar", Utils.ResetAvatar, resetAvatarIcon);
-                   
+
                     //Instance Rejoin
                     if (ModSettings.confirmInstanceRejoin)
-                        CustomSubMenu.AddSubMenu("Rejoin Instance", 
-                            () => CustomSubMenu.AddButton("Confirm Instance Rejoin", Utils.RejoinInstance, rejoinInstanceIcon), 
+                        CustomSubMenu.AddSubMenu("Rejoin Instance",
+                            () => CustomSubMenu.AddButton("Confirm Instance Rejoin", Utils.RejoinInstance, rejoinInstanceIcon),
                             rejoinInstanceIcon
                         );
                     else
                         CustomSubMenu.AddButton("Rejoin Instance", Utils.RejoinInstance, rejoinInstanceIcon);
-                    
+
                     //Go Home
                     if (ModSettings.confirmGoHome)
-                        CustomSubMenu.AddSubMenu("Go Home", 
-                            () => CustomSubMenu.AddButton("Confirm Go Home",Utils.Home, goHomeIcon), 
+                        CustomSubMenu.AddSubMenu("Go Home",
+                            () => CustomSubMenu.AddButton("Confirm Go Home", Utils.Home, goHomeIcon),
                             goHomeIcon
                         );
                     else
-                        CustomSubMenu.AddButton("Go Home",Utils.Home, goHomeIcon);
+                        CustomSubMenu.AddButton("Go Home", Utils.Home, goHomeIcon);
 
                 }, helpIcon
             );
@@ -130,7 +131,7 @@ namespace ActionMenuUtils
 
         public override void OnPreferencesLoaded() => ModSettings.Apply();
         public override void OnPreferencesSaved() => ModSettings.Apply();
-        
+
         //private static string ID = "gompo";
     }
 }

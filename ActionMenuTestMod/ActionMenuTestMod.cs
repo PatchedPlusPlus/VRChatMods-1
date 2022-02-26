@@ -6,7 +6,7 @@ using MelonLoader;
 using UnhollowerRuntimeLib;
 using UnityEngine;
 
-[assembly: MelonInfo(typeof(ActionMenuTestMod.ActionMenuTestMod), "ActionMenuTestMod", "1.0.0", "gompo, PatchedPlus+")]
+[assembly: MelonInfo(typeof(ActionMenuTestMod.ActionMenuTestMod), "ActionMenuTestMod", "1.0.0", "gompo, P a t c h e d   P l u s +")]
 [assembly: MelonGame("VRChat", "VRChat")]
 
 namespace ActionMenuTestMod

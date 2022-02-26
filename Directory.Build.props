@@ -2,6 +2,7 @@
     <PropertyGroup>
         <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
         <ClearOutputDirectory>False</ClearOutputDirectory>
+        <DOCKERVAR>$(DOCKER_RUNNING)</DOCKERVAR>
         <VRChatFolder>E:\Windows\Programs\Software\SteamLibrary\steamapps\common\VRChat</VRChatFolder>
         <MelonManaged>..\..\..\..\Dependencies\MelonLoader\Managed</MelonManaged>
         <MelonLoader>$(MelonManaged)\..</MelonLoader>

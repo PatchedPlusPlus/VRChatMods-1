@@ -6,7 +6,7 @@ using UnityEngine.XR;
 using Main = StandaloneThirdPerson.Main;
 
 [assembly: MelonGame("VRChat", "VRChat")]
-[assembly: MelonInfo(typeof(Main), "StandaloneThirdPerson", "1.3.3", "gompo & ljoonal, PatchedPlus+", "https://github.com/gompoc/VRChatMods/releases/")]
+[assembly: MelonInfo(typeof(Main), "StandaloneThirdPerson", "1.3.3", "gompo & ljoonal, P a t c h e d   P l u s +", "https://github.com/gompoc/VRChatMods/releases/")]
 
 namespace StandaloneThirdPerson
 {
@@ -94,6 +94,8 @@ namespace StandaloneThirdPerson
             if (Input.GetKey(KeyCode.I)) movement += thirdPersonCamera.transform.forward;
             if (Input.GetKey(KeyCode.K)) movement -= thirdPersonCamera.transform.forward;
 
+            if (Input.GetKey(KeyCode.RightShift)) movement *= 2;
+
             thirdPersonCamera.transform.position += movement * Time.deltaTime * 2;
         }
 
@@ -112,7 +114,7 @@ namespace StandaloneThirdPerson
                 keyBindInputDelegate = () => Input.GetKeyDown(ModSettings.KeyBind);
             else
                 keyBindInputDelegate = () => Input.GetKey(ModSettings.SecondaryKeyBind) && Input.GetKeyDown(ModSettings.KeyBind);
-            
+
             if (ModSettings.FreeformSecondaryKeyBind == KeyCode.None)
                 freeformKeyBindInputDelegate = () => Input.GetKeyDown(ModSettings.FreeformKeyBind);
             else
@@ -156,7 +158,6 @@ namespace StandaloneThirdPerson
                     thirdPersonCamera.enabled = true;
                 }
             }
-
 
             if (currentMode != CameraMode.Normal)
             {
